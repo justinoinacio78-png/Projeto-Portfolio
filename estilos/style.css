@@ -66,6 +66,7 @@ header nav ul li a:hover{
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -121,7 +122,6 @@ section#ficha div#social a:hover{
 
 section#detalhe{
   grid-column: 2;
-  margin-top: 20px;
 }
 
 section#detalhe article{
@@ -280,6 +280,21 @@ div#projetos-container .projeto:hover{
   }
 
 @media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhe{
+    grid-column: 3 / 4;
+  }
+
   #container{
     grid-template-columns: 1fr 1fr;
   }
